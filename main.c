@@ -3,10 +3,10 @@
 #include "libft.h"
 int main()
 {
-     char dst[] = "acoucou";
-    char dst1[] = "ücoucou";
-   char src1[] = "ücoucou";
-    char src[] = "acoucou";
+     char dst[] = "abcd";
+    char dst1[] = "xyzwaa";
+   char src1[] = "abcd";
+    char src[] = "xyzwaa";
    // printf("%zu\n", ft_strlcat(dst, src,4));
     ///printf("%zu\n", strlcpy(dst, src,3));
     /*char src[] = "coucou";
@@ -21,9 +21,9 @@ int main()
     char dest[10] ; ft_memset(dest, 'A', 10);
     printf("%zu\n",ft_strlcpy(dest, src, 0) );
     printf("%s\n", dest);*/
-    
-    printf("%d\n",strncmp(dst, dst1 , 6));
-   printf("%d\n",ft_strncmp(src, src1 , 6));
+    printf("%s\n",ft_strrchr(dst, 0));
+   //memmove(src1, src , 5);
+   //printf("%s\n",src1);
    /*int main () {
    const char src[50] = "http://www.tutorialspoint.com";
    char dest[50];
