@@ -21,7 +21,7 @@ int main()
     char dest[10] ; ft_memset(dest, 'A', 10);
     printf("%zu\n",ft_strlcpy(dest, src, 0) );
     printf("%s\n", dest);*/
-    printf("%s\n",ft_strrchr(dst, 0));
+    //printf("%s\n",ft_strrchr(dst, 0));
    //memmove(src1, src , 5);
    //printf("%s\n",src1);
    /*int main () {
@@ -34,4 +34,5 @@ int main()
    
    return(0);
 }*/
+   
 }

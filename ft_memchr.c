@@ -1,31 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/11/04 12:54:44 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/07 17:53:28 by iel-mach         ###   ########.fr       */
+/*   Created: 2021/11/07 16:49:27 by iel-mach          #+#    #+#             */
+/*   Updated: 2021/11/07 17:21:34 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char    *ft_strchr(const char *s, int c)
+void *ft_memchr(const void *s, int c, size_t n)
 {
-    char *str = (char *)s;
-    int i;
+    unsigned char *str;
+    size_t i;
 
-    c = (unsigned char )c;
     i = 0;
-    if (c == '\0')
-        return(str + ft_strlen(str));
-    while(str[i])
+    str = (unsigned char *)s;
+    
+    while(i < n)
     {
-        if(str[i] == c)
+        if(str[i] == (unsigned char)c)
             return(&str[i]);
         i++;
     }
-    return NULL;
+    return(NULL);
+}
+
+int main()
+{
+    char s[] = {0, 1, 2 ,3 ,4 ,5};
+    printf("%s\n",ft_memchr(s, 4, 5));
 }

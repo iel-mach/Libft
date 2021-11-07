@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:55:06 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/06 11:18:56 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/07 16:50:03 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,4 +37,6 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	ft_putchar_fd(char c, int fd);
+char    *ft_strdup(const char *s1);
+void    *ft_memchr(const void *s, int c, size_t n);
 #endif
