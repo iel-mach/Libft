@@ -6,15 +6,15 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:54:59 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/04 12:55:00 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/08 11:01:40 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if (c >= 'A' && c <= 'Z')
-        c += 32;
-    return(c);
+	if (c >= 'A' && c <= 'Z')
+		c += 32;
+	return (c);
 }

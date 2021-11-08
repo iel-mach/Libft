@@ -6,13 +6,13 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/05 12:41:46 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/05 12:43:55 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/08 10:51:08 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    write (fd, &c, 1);
+	write (fd, &c, 1);
 }
