@@ -6,13 +6,13 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:54:37 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/04 12:54:38 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/07 21:31:10 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isprint(int c)
+int	ft_isprint(int c)
 {
-    return (c >= 32 && c  <= 126);   
+	return (c >= 32 && c <= 126);
 }

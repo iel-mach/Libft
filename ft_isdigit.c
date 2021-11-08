@@ -6,13 +6,13 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:54:33 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/04 12:54:34 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/07 21:30:31 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
-    return (c >= '0' && c <= '9');   
+	return (c >= '0' && c <= '9');
 }
