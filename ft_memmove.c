@@ -1,14 +1,24 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2021/11/08 11:57:00 by iel-mach          #+#    #+#             */
+/*   Updated: 2021/11/08 11:57:01 by iel-mach         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	char	*a;
 	char	*b;
-	size_t	i;
 
 	a = (char *)dst;
 	b = (char *)src;
-	i = 0;
 	if (a > b)
 	{
 		while (len > 0)
