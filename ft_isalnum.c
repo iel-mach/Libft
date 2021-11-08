@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:54:23 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/07 21:27:50 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/08 14:09:13 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,8 @@
 
 int	ft_isalnum(int c)
 {
-	return (ft_isdigit(c) || ft_isalpha(c));
+	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z') \
+	|| (c >= '0' && c <= '9'))
+		return (1);
+	return (0);
 }
