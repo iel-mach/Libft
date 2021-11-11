@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:55:06 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/08 16:56:48 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/11 03:02:01 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,4 +43,10 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+void	ft_putstr_fd(char *s, int fd);
+void	ft_putnbr_fd(int nb, int fd);
+void	ft_putendl_fd(char *s, int fd);
+char	*ft_itoa(int n);
+char	*ft_strtrim(char const *s1, char const *set);
 #endif
