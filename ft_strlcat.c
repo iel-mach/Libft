@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:26:32 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/08 10:55:58 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/13 02:37:57 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,16 +23,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size)
 	i = 0;
 	dst_len = ft_strlen(dst);
 	src_len = ft_strlen(src1);
-	if (size == 0)
+	if ((size == 0 && !dst) || size == 0)
 		return (src_len);
+	if (size < dst_len)
+		return (src_len + size);
 	while (src1[i] && (i + dst_len) < (size - 1))
 	{
 		dst[dst_len + i] = src1[i];
 		i++;
 	}
 	dst[dst_len + i] = '\0';
-	if (size > dst_len)
-		return (src_len + dst_len);
-	else
-		return (src_len + size);
+	return (src_len + dst_len);
 }

@@ -6,11 +6,12 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 18:03:31 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/10 18:07:48 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/11 04:26:26 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
 void	ft_putendl_fd(char *s, int fd)
 {
 	ft_putstr_fd(s, fd);

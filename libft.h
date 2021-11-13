@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:55:06 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/11 03:02:01 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/13 16:08:45 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,4 +49,7 @@ void	ft_putnbr_fd(int nb, int fd);
 void	ft_putendl_fd(char *s, int fd);
 char	*ft_itoa(int n);
 char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+char	**ft_split(char const *s, char c);
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 #endif
