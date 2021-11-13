@@ -6,17 +6,17 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/12 01:02:11 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/13 18:59:07 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/13 22:13:07 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
- #include "libft.h"
+#include "libft.h"
 
 int	countword(char const *s, char c)
 {
 	int	x;
 	int	i;
-	int count;
+	int	count;
 
 	x = 0;
 	i = 0;
@@ -37,8 +37,8 @@ int	countword(char const *s, char c)
 
 int	countchar(char const *s, char c)
 {
-	int i;
-	int j;
+	int	i;
+	int	j;
 
 	i = 0;
 	j = 0;
@@ -52,11 +52,12 @@ int	countchar(char const *s, char c)
 	}
 	return (j);
 }
+
 char	*ft_stock(char const *s, char c)
 {
 	char	*w;
-	int i;
-	int j;
+	int		i;
+	int		j;
 
 	i = 0;
 	j = countchar(s, c);
@@ -83,7 +84,7 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	j = 0;
 	i = 0;
-	w = malloc (sizeof(char *) * countword(s, c) + 1);
+	w = malloc (sizeof(char *) * (countword(s, c) + 1));
 	if (!w)
 		return (NULL);
 	while (s[i])
@@ -100,29 +101,3 @@ char	**ft_split(char const *s, char c)
 	w[j] = 0;
 	return (w);
 }
-/*
-int main()
-{
-	char p[] = "issaam+el+machkour";
-	char **new;
-
-	new = ft_split(p,'+');
-	int i = 0;
-	while(new[i])
-	{
-		printf("%s\n",new[i]);
-		i++;
-	}
-}*/
-// int    main(void)
-// {
-//     int i = 0;
-// 	char **tab = ft_split("   lorem   ipsum dolor     sit amet, consectetur   adipiscing elit. Sed non risus. Suspendisse   ", ' ');
-//      while (tab[i])
-//      {
-//       printf("|%s|\n", tab[i]);
-//          i++;
-//      }
-// 	 printf("|%s|\n", tab[i]);
-//     return (0);
-// }
