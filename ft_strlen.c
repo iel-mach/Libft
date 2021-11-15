@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:54:52 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/05 21:44:03 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/15 05:21:55 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,10 @@
 
 size_t	ft_strlen(const char *s)
 {
-	char	*str;
 	size_t	i;
 
-	str = (char *)s;
 	i = 0;
-	while (str[i])
+	while (s[i])
 		i++;
 	return (i);
 }

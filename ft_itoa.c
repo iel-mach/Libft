@@ -6,13 +6,13 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/10 23:25:22 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/13 02:40:13 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/15 01:43:29 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*pit_in_str(long int nb, int i, int j, long int nbr)
+static char	*pit_in_str(long int nb, int i, int j, long int nbr)
 {
 	char	*x;
 
@@ -30,8 +30,9 @@ char	*pit_in_str(long int nb, int i, int j, long int nbr)
 	i--;
 	while (i >= 0 && nbr)
 	{
-		x[i--] = (nbr % 10) + 48;
+		x[i] = (nbr % 10) + 48;
 		nbr = nbr / 10;
+		i--;
 	}
 	return (x);
 }

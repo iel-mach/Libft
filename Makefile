@@ -6,7 +6,7 @@
 #    By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/11/04 12:55:12 by iel-mach          #+#    #+#              #
-#    Updated: 2021/11/13 23:08:14 by iel-mach         ###   ########.fr        #
+#    Updated: 2021/11/14 23:04:39 by iel-mach         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,9 +28,9 @@ $(OBJS):
 	$(CC) $(FLAGS) $(SRC) $(ARG)
 
 clean : 
-	rm -rf $(OBJS)
+	rm -f $(OBJS)
 
 fclean : clean
-	rm -rf $(NAME)
+	rm -f $(NAME)
 
 re: fclean all

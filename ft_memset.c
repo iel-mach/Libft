@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:54:40 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/08 10:50:36 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/15 03:45:02 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	a = (unsigned char *)b;
 	while (i < len)
 	{
-		a[i] = c;
+		a[i] = (unsigned char)c;
 		i++;
 	}
 	return (a);

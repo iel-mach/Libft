@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:54:56 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/08 11:01:06 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/15 05:22:34 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*ft_strrchr(const char *s, int c)
 	int		i;
 
 	str = (char *) s;
-	c = (unsigned char)c;
+	c = (char)c;
 	i = ft_strlen(s);
 	if (c == 0)
 		return (str + ft_strlen(str));

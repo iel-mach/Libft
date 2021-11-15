@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:55:06 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/13 16:08:45 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/15 15:29:08 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <stdio.h>
 # include <string.h>
 # include <stdlib.h>
 
@@ -31,7 +30,7 @@ size_t	ft_strlcat(char *dst, const char *src, size_t size);
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 char	*ft_strchr(const char *s, int c);
-int		ft_atoi(const char *str);
+int		ft_atoi(const char *s);
 char	*ft_strrchr(const char *s, int c);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
