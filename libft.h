@@ -6,7 +6,7 @@
 /*   By: iel-mach <iel-mach@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/04 12:55:06 by iel-mach          #+#    #+#             */
-/*   Updated: 2021/11/15 15:29:08 by iel-mach         ###   ########.fr       */
+/*   Updated: 2021/11/16 01:13:28 by iel-mach         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include <string.h>
 # include <stdlib.h>
 
 int		ft_isalpha(int c);
